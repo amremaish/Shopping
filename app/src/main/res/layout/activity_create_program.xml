@@ -1,0 +1,131 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Home.CreateProgram">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/program_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/sreach_red"
+            android:hint="Title of program"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteY="70dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Choose the place : "
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <Spinner
+                android:id="@+id/city_spinner"
+                android:layout_width="139dp"
+                android:layout_height="42dp"
+                android:layout_weight="0.44"
+                android:drawableRight="@drawable/sreach_red"
+                android:hint="City"
+                android:padding="10dp" />
+
+            <Spinner
+                android:id="@+id/place_spinner"
+                android:layout_width="184dp"
+                android:layout_height="42dp"
+                android:layout_weight="0.66"
+                android:drawableRight="@drawable/sreach_red"
+                android:hint="Malls"
+                android:padding="10dp"
+                tools:layout_editor_absoluteY="70dp" />
+
+            <ImageView
+                android:id="@+id/show_on_map"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/map" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Choose the time : "
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/selectDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Date"
+                    android:textColor="#fff"
+                    app:backgroundTint="#ebca0707" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/selectTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select time"
+                    android:textColor="#fff"
+                    app:backgroundTint="#ebca0707" />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ride_sharing_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="90dp"
+                android:padding="10dp"
+                android:text="Ride sharing" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="123dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/my_button_bg"
+            android:text="Confirm"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>

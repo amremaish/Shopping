@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/man_user"
+            android:title="Account" />
+    </group>
+
+
+    <item android:title="Tools">
+        <menu>
+            <item
+                android:id="@+id/Search"
+                android:icon="@drawable/sreach_red"
+                android:title="Search" />
+            <item
+                android:id="@+id/add_program"
+                android:icon="@drawable/add"
+                android:title="Add program" />
+        </menu>
+    </item>
+
+</menu>

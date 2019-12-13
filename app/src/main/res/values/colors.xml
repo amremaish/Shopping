@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff301a</color>
+    <color name="colorPrimaryDark">#FF1900</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="trans">#FFFFFF</color>
+    <color name="navigationBarColor">#FF1900</color>
+    <color name="colorAccent">#F08080</color>
+    <color name="AcceptedColor">#3CB371</color>3
+    <color name="RejectedColor">#FF1900</color>
+</resources>
